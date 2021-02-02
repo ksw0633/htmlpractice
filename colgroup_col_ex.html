@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td,th
+        {
+         border: 1px solid #000;   
+        }
+        .c1
+        {
+            background: #ff0;
+        }
+        .c2
+        {
+            background: #0ff;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="c1">            <!--  column group(vertical column)-->
+            <col class="c2">
+        </colgroup>
+        <thead>                                                        
+            <tr>                                                
+                <th>subject</th>                                
+                <th>score</th>                                
+            </tr>                                               
+        </thead>                                                
+        <tbody>
+            <tr>    
+                <th>html</th>
+                <td>93</td>
+            </tr> 
+            <tr>
+                <th>css</th>
+                <td>92</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>avg</th>
+                <td>92.5</td>
+            </tr>                                 
+        </tfoot>
+    </table>
+</body>
+</html>

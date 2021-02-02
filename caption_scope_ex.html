@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td,th
+        {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>blah blah</caption>                            <!-- caption is the title of the table -->
+        <colgroup>
+            <col><col><col>    
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">a</th>                          <!-- scope is used to discriminate between rows and columns. must be an attribute of th -->
+                <th scope="col">b</th>
+                <th scope="col">c</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">d</th>
+                <td>e</td>
+                <td>f</td>
+            </tr>
+            <tr>
+                <th scope="row">d</th>
+                <td>g</td>
+                <td>h</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
