@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>text</title>
+    <style>
+        #gnb{
+            border: 1px solid;
+            width: 200px;
+        }
+        #gnb>li
+        {
+            border: 1px solid gray;
+            list-style: none;
+            margin-left: -40px;
+            text-align: center;
+            height: 50px;
+            font-size: 24px;
+            line-height: 50px;
+        }
+        #gnb>li:hover
+        {
+            background-color: aqua;
+        }
+        #gnb>li>a
+        {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+
+        }
+        #gnb>li>a:hover
+        {
+            color : red;
+            text-decoration: underline;
+        }
+        .lnb
+        {
+            display: none;
+            width: 260px;
+            border: 1px solid blue;
+            margin-left: 240px;
+            margin-top: -50px;
+        }
+        .lnb li
+        {
+                list-style: none;
+                margin-left: -40px;
+        }
+        .lnb>li:hover
+        {
+            background-color: red;
+        }
+        #gnb>li:hover>.lnb
+        {
+            display: block
+        }
+    </style>
+</head>
+<body>
+    <ul id="gnb">
+        <li><a href="https://www.google.com">google</a>
+            <ul class="lnb">
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+            </ul>
+        </li>
+        <li><a href="https://www.naver.com">naver</a>  
+             <ul class="lnb">
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+            </ul>
+        </li>
+            <li><a href="https://www.daum.net">daum</a>   
+             <ul class="lnb">
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.youtube.com">youtube</a>
+            <ul class="lnb">
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+                <li><a href="#">n2_</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
