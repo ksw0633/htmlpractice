@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr
+        {
+            height: 50px;
+        }
+        td, th
+        {
+            border-bottom: 1px dashed gray;
+        }
+        th
+        {
+            text-align: right;
+        }
+        div
+        {
+            text-align: center;
+        }
+        fieldset
+        {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>label</h1>
+        <form action="#">
+        <fieldset>
+        <legend>sign in</legend>
+            <table>
+                <colgroup>
+                    <col>
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row"><label for="id">id</label></th>                               <!-- label is a tag for putting labels on user input tags(input, textarea, etc...)-->
+                        <td><input type="text" id="id" title="type id"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="pw">pw</label></th>
+                        <td><input type="password" id="pw" title="type pw"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="r_pw">retype pw</label></th>
+                        <td><input type="password" id="r_pw" title="retype pw"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="email">email</label></th>
+                        <td><input type="text" id="email" title="type email">@<input type="text" title="type domain"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><label for="tel">tel</label></th>
+                        <td>
+                            <select name="tel" id="select area code">
+                                <option>select</option>
+                                <option>010</option>
+                                <option>011</option>
+                            </select>
+                            <input type="text" title="type mid 4 num of tel">
+                            <input type="text" title="type last 4 num of tel">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div><input type="submit" value="sign in"><input type="reset" value="cancel"></div>
+        </fieldset>
+        </form>   
+    </body>
+    </html>
